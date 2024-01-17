@@ -1,0 +1,35 @@
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {color: #000; text-decoration: none;}
+.clearfix::before, .clearfix::after {content: ''; clear: both;}
+
+/* layout */
+#wrap {width: 1920px; height: 4319px; background: #ccc; margin: 0 auto;}
+#wrap .top {height: 900px; background: #F2E9D8; z-index: -2}
+
+#header {height: 102px; background: #F2E9D8;}
+#benner {}
+#content1 {}
+#content2 {}
+#content3 {}
+#content4 {}
+#footer {}
+
+
+/* top */
+#benner h2 {width: 695px; height: 120px; padding-top: 202px; padding-left: 320px;}
+#benner h3 {width: 420px; height: 86px; padding-top: 30px; padding-left: 320px;}
+#benner .aa {position: absolute; top: 136px; left: 1185px;}
+
+/* header */
+#header h1 {float: left;}
+#header h1 a {margin-left: 320px;}
+#header h1 img {width: 130px; margin-top: 31px;}
+#header .nav {float: left;}
+#header .nav ul {padding-top: 41px; padding-left: 700px;}
+#header .nav li {width: 43px; height: 20px; display: inline;}
+#header .nav li a {padding: 20px 15px;}
+#header .nav a img {padding-top: 26px; padding-left: 30px; width: 140px; height: 50px;}
+
+
