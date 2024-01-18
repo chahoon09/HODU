@@ -1,15 +1,15 @@
 /* reset */
-* {margin: 0; padding: 0;}
+* { }
 li {list-style: none;}
 a {color: #000; text-decoration: none;}
 .clearfix::before, .clearfix::after {content: ''; clear: both;}
 
 /* layout */
-#wrap {width: 1920px; height: 4319px; background: #ccc; margin: 0 auto;}
+#wrap {height: 4319px; background: #ccc; margin: 0 auto;}
 #wrap .top {height: 900px; background: #F2E9D8; z-index: -2}
 
 #header {height: 102px; background: #F2E9D8;}
-#benner {}
+#benner {position: relative;}
 #content1 {}
 #content2 {}
 #content3 {}
@@ -20,7 +20,7 @@ a {color: #000; text-decoration: none;}
 /* top */
 #benner h2 {width: 695px; height: 120px; padding-top: 202px; padding-left: 320px;}
 #benner h3 {width: 420px; height: 86px; padding-top: 30px; padding-left: 320px;}
-#benner .aa {position: absolute; top: 136px; left: 1185px;}
+#benner .aa {position: absolute; top: 136px; left: 1185px; z-index: 0}
 
 /* header */
 #header h1 {float: left;}
