@@ -67,9 +67,6 @@ function makeImageList(datas){
 }
 
 window.addEventListener('scroll', ()=> {
-  // 스크롤이 상단으로부터 얼마나 이동했는지 알아야함. (뷰포트 높이 + 스크롤된 길이)
-  // 화면에 로딩된 페이지의 전체 높이
-  // 뷰포트의 높이 + 스크롤된 길이 + 10 == 화면에 로딩된 페이지의 전체 높이
 
   if(window.innerHeight + document.documentElement.scrollTop + 10 >=
     document.documentElement.offsetHeight){
