@@ -1,35 +1,118 @@
 /* reset */
-* { }
+* {margin: 0; padding: 0; font-family: 'Pretendard';}
 li {list-style: none;}
 a {color: #000; text-decoration: none;}
-.clearfix::before, .clearfix::after {content: ''; clear: both;}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.show{display: block;}
 
 /* layout */
-#wrap {height: 4319px; background: #ccc; margin: 0 auto;}
-#wrap .top {height: 900px; background: #F2E9D8; z-index: -2}
-
-#header {height: 102px; background: #F2E9D8;}
-#benner {position: relative;}
-#content1 {}
+main {width: 1920px; margin: 0 auto; position: relative;}
+header {width: 1920px; background: #F2E9D8; margin: 0 auto;}
+/* header의 position은 relative*/
+header .container {height: 102px; position: relative; display: flex;}
+#content1 {width: 1920px; height: 800px; background: #F2E9D8;
+  background-image: url("/img/cat_box.png"); background-repeat: no-repeat; background-position: 1185px 34px;}
 #content2 {}
 #content3 {}
 #content4 {}
-#footer {}
+#footer {position: relative; width: 1920px; height: 160px; top: 3359px; left: 0px; margin: 0 auto;}
 
-
-/* top */
-#benner h2 {width: 695px; height: 120px; padding-top: 202px; padding-left: 320px;}
-#benner h3 {width: 420px; height: 86px; padding-top: 30px; padding-left: 320px;}
-#benner .aa {position: absolute; top: 136px; left: 1185px; z-index: 0}
 
 /* header */
-#header h1 {float: left;}
-#header h1 a {margin-left: 320px;}
-#header h1 img {width: 130px; margin-top: 31px;}
-#header .nav {float: left;}
-#header .nav ul {padding-top: 41px; padding-left: 700px;}
-#header .nav li {width: 43px; height: 20px; display: inline;}
-#header .nav li a {padding: 20px 15px;}
-#header .nav a img {padding-top: 26px; padding-left: 30px; width: 140px; height: 50px;}
+header h1 {position: absolute; top: 31px; left: 320px;}
+header ul {position: absolute; top: 41px; left: 1206px;}
+header ul li {display: inline-block; padding-left: 15px; font-size: 16px; line-height: 20px; font-weight: 400;}
+header nav .Down {position: absolute; width: 143px; height: 50px; top: 26px; left: 1460px;
+                  background: #D97652; border-radius: 40px; border: 0;}
+header nav .Down .Download {position: absolute; width: 90px; height: 20px; top: 15px; left: 29px;
+                            color: white; font-size: 16px; line-height: 20px; font-weight: 700;}
 
 
+/* content1 */
+#content1 h2 {position: absolute; width: 695px; height: 120px; top: 202px; left: 320px;
+              font-size: 48px; line-height: 60px; font-weight: 700; word-spacing: -9px;}
+#content1 h3 {position: absolute; width: 450px; height: 86px; top: 362px; left: 320px;
+              font-size: 16px; line-height: 20px; font-weight: 400;}
+#content1 a {position: absolute; width: 143px; height: 50px; top: 490px; left: 320px;
+                       background: #D97652; border-radius: 40px;}
+#content1 a .Download {position: absolute; width: 90px; height: 20px; top: 15px; left: 29px;
+                       color: white; font-size: 16px; line-height: 20px; font-weight: 700;}
+
+
+/* content2 */
+#content2 .top img {position: absolute; width: 660px; height: 390px; top: 1060px; left: 320px;}
+#content2 .top h3 {position: absolute; width: 510px; height: 135px; top: 1152px; left: 1090px;
+                   font-size: 36px; line-height: 45px; word-spacing: -5px;}
+#content2 .top h4 {position: absolute; width: 510px; height: 40px; top: 1317px; left: 1090px;
+                   font-size: 16px; line-height: 20px; word-spacing: -1px;}
+
+#content2 .down h3 {position: absolute; width: 900px; height: 60px; top: 1570px; left: 523px;
+  font-size: 48px; line-height: 60px; color: #D97652; word-spacing: -5px;}
+#content2 .down h4 {position: absolute; width: 800px; height: 42px; top: 1670px; left: 605px;
+  font-size: 16px; line-height: 20px; text-align: center;}
+#content2 .down h4 span {color: #D97652;}
+
+/* content3 */
+#content3 .cats1 {position: absolute; width: 1278px; height: 378px; top: 1800px; left: 320px;}
+#content3 .cats2 {position: absolute; width: 1278px; height: 378px; top: 2250px; left: 320px;}
+#content3 h3 {position: absolute; width: 290px; height: 30px; top: 2728px; left: 815px;
+              font-size: 24px; line-height: 30px;}
+#content3 a {position: absolute; width: 143px; height: 50px; top: 2786px; left: 888.5px;
+             background: #D97652; border-radius: 30px; border: 0;}
+#content3 a p {position: absolute; width: 90px; height: 20px; top: 15px; left: 29px;
+               color: white; font-size: 16px; line-height: 20px; font-weight: 700;}
+#content3 .line {position: absolute; width: 1278px; height: 1px; top: 2916px; left: 320px;
+  border-top: 1px solid #C4C4C4; margin: 30px 0px;}
+
+
+/* content4 */
+#content4 h2 {position: absolute; width: 300px; height: 45px; top: 2985px; left: 320px;
+              font-size: 36px; line-height: 45px; font-weight: 700;}
+#content4 h3 {position: absolute; width: 395px; height: 20px; top: 3050px; left: 320px;
+              font-size: 16px; line-height: 20px; font-weight: 500;}
+#content4 .map {position: absolute; width: 1278px; height: 520px; top: 3118px; left: 320px;
+                border-radius: 12px;}
+#content4 .Out-box {position: absolute; width: 1280px; height: 200px; top: 3718px; left: 320px;
+                       border: 0; border-radius: 30px; outline: none; background-color: #263140; z-index: 1;}
+#content4 .mail-box {position: absolute; width: 530px; height: 60px; top: 3788px; left: 1012px;
+                     border: 0; border-radius: 30px; outline: none; background-color: #ffffff; z-index: 1;}
+
+#content4 .subscribe {position: absolute; width: 135px; height: 50px; top: 3793px; left: 1401px;
+                      border: 0; border-radius: 40px; outline: none; background-color: #D97652; z-index: 2;}
+#content4 .subscribe p {position: absolute; width: 80px; height: 20px; top: 15px; left: 29px; z-index: 2;
+                        color: white; font-size: 16px; line-height: 20px; font-weight: 700;}
+
+#content4 input {position: absolute; width: 310px; height: 32px; top: 3802px; left: 1080px;
+                 font-size: 20px; z-index: 3; border: 0; background: transparent; outline: none;
+                }
+#content4 .text-box h2 {position: absolute; width: 500px; height: 45px; top: 3769px; left: 378px; z-index: 2;
+                font-size: 36px; line-height: 45px; font-weight: 700; color: white;}
+#content4 .text-box h3 {position: absolute; width: 500px; height: 45px; top: 3832px; left: 378px; z-index: 2;
+                font-size: 14px; line-height: 18px; font-weight: 400; color: white;}
+#content4 .stn-bt {position: absolute; width: 1920px; height: 340px; top: 3819px; left: 0;}
+#content4 .mail {position: absolute; width: 24px; height: 24px; top: 3806px; left: 1040px; z-index: 2}
+#content4 .moveTopBtn {position: absolute; width: 50px; height: 50px; top: 4090px; left: 1846px; cursor: pointer;}
+
+/* layer */
+#content4 .layer {position: absolute; top: 3587px; left: 660px; z-index: 4; display: none;}
+#content4 .layer.show {display: block;}
+#content4 .layer .czcz {border-radius: 30px;}
+#content4 .layer .cat8 {position: absolute; top: 60px; left: 245px;}
+#content4 .layer h3 {position: absolute; width: 212px; height: 46px; top: 196px; left: 194px;
+                     font-size: 36px; line-height: 45px; font-weight: 700; color: #D97652;}
+#content4 .layer h4 {position: absolute; width: 400px; height: 18px; top: 254px; left: 108px;
+                     font-size: 14px; line-height: 18px; font-weight: 400;}
+#content4 .layer a {position: absolute; width: 183px; height: 50px; top: 310px; left: 205px;
+                    border: 0; border-radius: 40px; outline: none; background-color: #D97652;}
+#content4 .layer a p {position: absolute; top: 14px; left: 26px;
+                           color: white; font-size: 16px; line-height: 20px; font-weight: 700;}
+#content4 .layer .background {position: absolute; width: 1920px; height: 4421px; top: -3689px; left: -660px;
+                              background-color: rgba( 255, 255, 255, 0.6 ); z-index: -1;}
+
+
+/* footer */
+#footer .foot-logo {position: absolute; width: 226px; height: 70px; top: 45px; left: 320px;}
+#footer .foot-1 {position: absolute; width: 42px; height: 42px; top: 58px; left: 1372px;}
+#footer .foot-2 {position: absolute; width: 42px; height: 42px; top: 58px; left: 1434px;}
+#footer .foot-3 {position: absolute; width: 42px; height: 42px; top: 58px; left: 1496px;}
+#footer .foot-4 {position: absolute; width: 42px; height: 42px; top: 58px; left: 1558px;}
