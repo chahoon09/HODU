@@ -11,7 +11,7 @@ header {width: 1920px; background: #F2E9D8; margin: 0 auto;}
 /* header의 position은 relative*/
 header .container {height: 102px; position: relative; display: flex;}
 #content1 {width: 1920px; height: 800px; background: #F2E9D8;
-  background-image: url("/img/cat_box.png"); background-repeat: no-repeat; background-position: 1185px 34px;}
+  background-image: url("../img/cat_box.png"); background-repeat: no-repeat; background-position: 1185px 34px;}
 #content2 {}
 #content3 {}
 #content4 {}
