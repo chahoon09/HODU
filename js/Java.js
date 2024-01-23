@@ -5,13 +5,9 @@ $topBtn.onclick = () =>
   window.scrollTo({ top: 0, behavior: "smooth"});
 };
 
+
+
 // layer 생성 및 삭제
-// $(".subscribe").click(function (){
-//   $(".layer").css("display","block");
-// });
-// $(".close").click(function (){
-//   $(".layer").css("display","none");
-// });
 
 const subscribe = document.querySelector(".subscribe");
 const layer = document.querySelector(".layer");
@@ -30,9 +26,6 @@ close.addEventListener("click", (event)=>{
 
 
 
-
-
-
 // 지도 열기
 var mapContainer = document.querySelector('.map'), // 지도를 표시할 div
   mapOption = {
@@ -41,9 +34,6 @@ var mapContainer = document.querySelector('.map'), // 지도를 표시할 div
   };
 // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 var map = new kakao.maps.Map(mapContainer, mapOption);
-
-
-
 
 
 
